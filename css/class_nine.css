@@ -1,0 +1,86 @@
+
+
+/*start here class nine csss*/
+/* default styling. Nothing to do with freexing first row and column */
+.entire-table {
+  padding: 215px 0px 0px 0px;
+}
+
+
+
+main {display: flex;}
+main > * {border: 1px solid;}
+table {border-collapse: collapse; font-family: helvetica}
+td, th {border:  1px solid;
+      padding: 10px;
+      min-width: 200px;
+      background: white;
+      box-sizing: border-box;
+      text-align: left;
+}
+
+
+
+
+.table-container {
+  position: relative;
+  max-height:  300px;
+  width: 500px;
+ 
+}
+
+thead {
+  background: #123;
+  color: #123;
+}
+
+
+ thead th {
+  top: 0;
+  z-index: 2;
+  background: #123;
+  color: bisque;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+tfoot {
+  bottom: 0;
+  z-index: 2;
+}
+
+tfoot td {
+ 
+  bottom: 0;
+  z-index: 2;
+  background: #123;
+}
+
+tfoot td:first-child {
+  z-index: 3;
+}
+
+tbody {
+  overflow: hidden;
+  height: 200px;
+  color: #123;
+}
+
+/* MAKE LEFT COLUMN FIXEZ */
+tr,td > :first-child {
+  position: -webkit-sticky;
+  position: sticky; 
+  background: hsl(180, 50%, 70%);
+  left: 0; 
+  text-align: center;
+}
+ 
+
+/* don't do this */
+tr > :first-child {
+  box-shadow: inset 0px 1px black;
+}
+
